@@ -10,9 +10,6 @@ source ~/.local/bin/bashmarks.sh
 # path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# python
-source /usr/local/bin/virtualenvwrapper.sh
-
 # SSH autocomplete
 zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
