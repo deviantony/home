@@ -11,6 +11,6 @@ then
     exit 1
 fi
 
-docker run --rm -i -t puppet-test:latest ${SHELL}
+docker run --rm -i -t last-container:latest ${SHELL}
 
 exit 0
