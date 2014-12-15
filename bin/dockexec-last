@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+LAST_CONTAINER_ID=`docker ps -l -q`
+SHELL=/bin/zsh
+
+docker commit ${LAST_CONTAINER_ID} last-container
+
+if [[ $? -ne 0 ]];
+then
+    echo "Bad contenair ID !"
+    exit 1
+fi
+
+docker run --rm -i -t puppet-test:latest ${SHELL}
+
+exit 0
