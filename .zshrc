@@ -5,7 +5,7 @@ plugins=(git git-flow vagrant docker history)
 source $ZSH/oh-my-zsh.sh
 
 # bashmarks
-source ~/.local/bin/bashmarks.sh
+source ~/bin/bashmarks.sh
 
 # path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
