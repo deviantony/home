@@ -29,6 +29,7 @@ alias del='rm -rf'
 alias sdel='sudo rm -rf'
 alias du1='du -h --max-depth=1'
 alias sdu1='sudo du -h --max-depth=1'
+alias gpat='git push --all && git push --tags'
 
 dluntar() { tar zxv < <(wget -q -O - $1) }
 
