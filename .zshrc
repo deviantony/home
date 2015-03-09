@@ -78,3 +78,6 @@ driut() { docker rmi $(docker images -q --filter "dangling=true") }
 
 # Run interactive container using zsh
 dkizsh () { docker run -i -t -P $1 /bin/zsh }
+
+# Run a deviantony/sandbox container using zsh
+sandbox () { docker run --rm -i -t deviantony/sandbox /bin/zsh }
