@@ -82,3 +82,9 @@ dkizsh () { docker run -i -t -P $1 /bin/zsh }
 
 # Run a deviantony/sandbox container using zsh
 sandbox () { docker run --rm -i -t deviantony/sandbox /bin/zsh }
+
+# docker-compose shortcut
+alias dkc="docker-compose"
+
+# docker-compose remove containers, build and up
+alias dkrbu="docker-compose rm --force && docker-compose build && docker-compose up"
