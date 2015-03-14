@@ -86,5 +86,8 @@ sandbox () { docker run --rm -i -t deviantony/sandbox /bin/zsh }
 # docker-compose shortcut
 alias dkc="docker-compose"
 
+# docker-compose remove containers
+alias dkcrm="docker-compose rm --force"
+
 # docker-compose remove containers, build and up
-alias dkrbu="docker-compose rm --force && docker-compose build && docker-compose up"
+alias dkcrbu="docker-compose rm --force && docker-compose build && docker-compose up"
