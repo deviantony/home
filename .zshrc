@@ -91,3 +91,8 @@ alias dkcrm="docker-compose rm --force"
 
 # docker-compose remove containers, build and up
 alias dkcrbu="docker-compose rm --force && docker-compose build && docker-compose up"
+
+### Python virtualenvwrapper
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
