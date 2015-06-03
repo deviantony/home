@@ -81,7 +81,7 @@ driut() { docker rmi $(docker images -q --filter "dangling=true") }
 dkizsh () { docker run --rm -it -P $1 /bin/zsh }
 
 # Run a deviantony/sandbox container using zsh
-sandbox () { docker run --rm -i -t deviantony/sandbox /bin/zsh }
+sandbox () { docker run --rm -it -v /tmp/docker-sandbox:/shared deviantony/sandbox /bin/zsh }
 
 # docker-compose shortcut
 alias dkc="docker-compose"
