@@ -29,7 +29,10 @@ alias del='rm -rf'
 alias sdel='sudo rm -rf'
 alias du1='du -h --max-depth=1'
 alias sdu1='sudo du -h --max-depth=1'
+
+## git aliases
 alias gpat='git push --all && git push --tags'
+alias gitbump='git add --all && git commit -m "Bumped version number and updated changelog."'
 
 dluntar() { tar zxv < <(wget -q -O - $1) }
 
@@ -68,7 +71,7 @@ alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
 # Remove all images
 dri() { docker rmi $(docker images -q); }
 
-# Dockerfile build, e.g., $dbu tcnksm/test 
+# Dockerfile build, e.g., $dbu tcnksm/test
 dbu() { docker build -t=$1 .; }
 
 # Show all alias related docker
