@@ -9,3 +9,9 @@ __pycache__/
 *.pyc
 build
 build/*
+dist
+dist/*
+*.iml
+*.log
+node_modules
+node_modules/*
