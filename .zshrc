@@ -29,7 +29,10 @@ alias del='rm -rf'
 alias sdel='sudo rm -rf'
 alias du1='du -h --max-depth=1'
 alias sdu1='sudo du -h --max-depth=1'
+
+## git aliases
 alias gpat='git push --all && git push --tags'
+alias gitbump='git add --all && git commit -m "Bumped version number and updated changelog."'
 
 dluntar() { tar zxv < <(wget -q -O - $1) }
 
@@ -84,7 +87,7 @@ driut() { docker rmi $(docker images -q --filter "dangling=true") }
 dkizsh () { docker run --rm -it -P $1 /bin/zsh }
 
 # Run a deviantony/sandbox container using zsh
-sandbox () { docker run --rm -i -t deviantony/sandbox /bin/zsh }
+sandbox () { docker run --rm -it -v /tmp/docker-sandbox:/shared deviantony/sandbox /bin/zsh }
 
 # docker-compose shortcut
 alias dkc="docker-compose"

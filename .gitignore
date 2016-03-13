@@ -3,7 +3,15 @@
 target
 target/*
 __pycache__
-__pycache__/
+__pycache__/*
 *.egg-info
 *.egg-info/*
 *.pyc
+build
+build/*
+dist
+dist/*
+*.iml
+*.log
+node_modules
+node_modules/*
